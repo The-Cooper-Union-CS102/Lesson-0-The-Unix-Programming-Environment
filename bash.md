@@ -170,6 +170,7 @@ is your friend.  Some other common commands are:
 
 * `up-arrow` lets your scroll through your history of commands.
 * `ctrl+r` lets you search your history.
+* `tab` autocompletes file names
 * You can use `vim` or `emacs` to edit files from your terminal
 
 ## Bash Scripting
