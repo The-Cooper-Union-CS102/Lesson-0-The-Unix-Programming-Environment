@@ -1,1 +1,1 @@
-data!
+Hello, this is data from sample.txt

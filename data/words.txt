@@ -1,0 +1,10 @@
+Cat
+Dog
+Cats
+Cat
+Dog
+Dogs
+Cat
+Cat
+Dog
+Dogs

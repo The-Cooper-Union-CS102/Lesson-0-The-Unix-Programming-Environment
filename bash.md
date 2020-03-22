@@ -96,7 +96,7 @@ Concatenate and print files
 #### Examples
 
 * `cat`
-* `cat README.md`
+* `cat data/sample.txt`
 
 ### `cp`
 
