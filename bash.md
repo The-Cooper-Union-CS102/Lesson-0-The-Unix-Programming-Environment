@@ -242,4 +242,4 @@ echo "Hello, first name: $firstname last name: $lastname"
 ```
 
 You can find this script in `code/bash_1.sh`.  You can run it with
-`./code/bash_1.sh Cory Nezin` for example.
+`./code/bash_2.sh Cory Nezin` for example
