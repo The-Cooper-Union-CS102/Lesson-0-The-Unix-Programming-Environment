@@ -52,6 +52,7 @@ List all directory contents
 * `ls`
 * `ls .`
 * `ls ..`
+* `ls ~`
 
 ### `mkdir`
 
@@ -71,6 +72,8 @@ Change (navigate into a) directory
 * `cd MyDir`
 * `cd .`
 * `cd ..`
+* `cd ~`
+* `cd -`
 
 ### `touch`
 
