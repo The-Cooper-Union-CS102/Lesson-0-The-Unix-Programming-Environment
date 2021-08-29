@@ -98,12 +98,74 @@ versions for `python38`, `python38-devel`, `python38-pip`,
 If you miss one of these steps, you can always run the executable again to
 install it.
 
+## Directories and Files
+
+Almost all operating systems use the concept of directories and files.
+
+A file contains data stored on a hard drive.
+
+A directory, also commonly referred to as a folder, contains a collection of
+directories and files.
+
+Because directories may branch off into more directories, one may refer to
+a directory and its contents as a tree, with files being leaves.  For example,
+I could describe a directory in English like this:
+
+```
+* A directory named directory_1, containing:
+    * A directory named directory_1, containing:
+        * A directory named directory_1 containing nothing
+    * A directory named directory_2, containins:
+        * A file named file_1
+        * A directory named directory_3, containing nothing.
+    * A file named file_1
+```
+
+Or I may simply write the tree format like this:
+
+```
+/directory_1/
+    directory_1/
+        directory_1/
+    directory_2/
+        file_1
+        directory_3/
+    file_1
+```
+
+Note that the names do not have to be unique if two things are in different
+directories.  This is because when we specify a folder or file, we can specify
+it with its "path" from the "root" of the tree.  For example one file could
+be specified by `/directory_1/directory_2/file_1` while the other could be
+specified by `/directory_1/file_1`.  You could think of it like a family
+tree, referring to directories which come before as **parents**, and
+directories which come after as **children**.  Keep in mind though that
+any child in this case has one and only one parent.
+
+It is important to understand that a shell is always *inside* a **working directory**,
+from which you can specify files by their **relative** path.  Going back to the
+previous example, if I were using a shell *inside* `directory_2`, I could take a
+shortcut and just write `file_1` instead of `/directory_1/directory_2/file_1`.
+
+There are some other drectory shortcut symbols in most shells, including bash:
+
+* `.`: The **working directory**
+* `..`: The **parent** of the working directory
+* `~`: The **home** directory.
+* `-`: The **previous** working directory
+
 ## Using a Shell
 
 Now that we've gotten all the definitions out of the way, let's take a look
 at what it actually means to use the shell.
 
 > Interactive Demonstration
+
+### `pwd`
+
+First, you might be able to tell your current directory by just looking at the
+prompt.  But in case you can't, you can explicitly print the working directory
+with `pwd`
 
 ### `man`
 
@@ -195,7 +257,7 @@ move (or rename) files
 
 ### `rm`
 
-Remove directory entries
+Remove files
 
 #### Examples
 
@@ -204,7 +266,7 @@ Remove directory entries
 
 ### `chmod`
 
-Change file modes (user permissions)
+Change file modes (permissions)
 
 #### Examples
 
@@ -215,7 +277,7 @@ Change file modes (user permissions)
 You will likely come across other commands not mentioned here.  Remember, `man`
 is your friend.  Some other common commands are:
 
-`pwd`, `ln`, `chown`, `find`, `du`, `df`, `less`, `head`, `tail`, `grep`,
+`ln`, `chown`, `find`, `du`, `df`, `less`, `head`, `tail`, `grep`,
 `sort`, `wc`, `diff`, `pkill`, `top`, `time`, `sudo`, `alias`
 
 ### Wildcards
