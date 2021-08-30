@@ -107,9 +107,9 @@ A file contains data stored on a hard drive.
 A directory, also commonly referred to as a folder, contains a collection of
 directories and files.
 
-Because directories may branch off into more directories, one may refer to
-a directory and its contents as a tree, with files being leaves.  For example,
-I could describe a directory in English like this:
+Because directories may branch off into more directories, one may refer to a
+directory and its contents as a tree, with files and emtpy directories being
+leaves.  For example, I could describe a directory in English like this:
 
 ```
 * A directory named directory_1, containing:
