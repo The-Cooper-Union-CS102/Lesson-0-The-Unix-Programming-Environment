@@ -64,40 +64,6 @@ system.  The shell is what allows you to interact with programs.  The terminal
 is simply a middleman that transcribes your input from the keyboard to the
 shell, and then takes the shell's output and and displays it to your monitor.
 
-## Getting Setup
-
-Getting setup with your terminal depends on your operating system, and some
-support it better than others.  This section provides a short guide on getting
-set up in Linux, macOS, and (most painfully) Windows.
-
-### Linux
-
-1. Press `Ctrl+Alt+T`.
-
-### macOS
-
-1. Press `⌘+space`.
-2. Search for and open `terminal`.
-3. (Optional) Install *iTerm2* for a better experience.
-
-### Windows
-
-I recommend [Cygwin](https://www.cygwin.com/) which you can download directly
-[here](https://www.cygwin.com/setup-x86_64.exe)
-
-1. Choose all default options.
-2. When it asks you to choose a download site, pick any.
-3. When it asks you to select packages, search for `gcc-g++`, navigate into
-`All` -> `Devel` -> `gcc-g++` and select the latest version from the dropdown
-4. Now search for `make`, navigate to `All` -> `Devel` -> `make` and select the
-latest version
-5. Now search `python`, navigate to `All` -> `Python`.  Select the latest
-versions for `python38`, `python38-devel`, `python38-pip`,
-`python38-setuptools`, and `python38-virtualenv`.
-
-If you miss one of these steps, you can always run the executable again to
-install it.
-
 ## Directories and Files
 
 Almost all operating systems use the concept of directories and files.
@@ -153,6 +119,41 @@ There are some other drectory shortcut symbols in most shells, including bash:
 * `..`: The **parent** of the working directory
 * `~`: The **home** directory.
 * `-`: The **previous** working directory
+
+
+## Getting Setup
+
+Getting setup with your terminal depends on your operating system, and some
+support it better than others.  This section provides a short guide on getting
+set up in Linux, macOS, and (most painfully) Windows.
+
+### Linux
+
+1. Press `Ctrl+Alt+T`.
+
+### macOS
+
+1. Press `⌘+space`.
+2. Search for and open `terminal`.
+3. (Optional) Install *iTerm2* for a better experience.
+
+### Windows
+
+I recommend [Cygwin](https://www.cygwin.com/) which you can download directly
+[here](https://www.cygwin.com/setup-x86_64.exe)
+
+1. Choose all default options.
+2. When it asks you to choose a download site, pick any.
+3. When it asks you to select packages, search for `gcc-g++`, navigate into
+`All` -> `Devel` -> `gcc-g++` and select the latest version from the dropdown
+4. Now search for `make`, navigate to `All` -> `Devel` -> `make` and select the
+latest version
+5. Now search `python`, navigate to `All` -> `Python`.  Select the latest
+versions for `python38`, `python38-devel`, `python38-pip`,
+`python38-setuptools`, and `python38-virtualenv`.
+
+If you miss one of these steps, you can always run the executable again to
+install it.
 
 ## Using a Shell
 
