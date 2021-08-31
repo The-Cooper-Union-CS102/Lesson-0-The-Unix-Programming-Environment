@@ -75,7 +75,19 @@ directories and files.
 
 Because directories may branch off into more directories, one may refer to a
 directory and its contents as a tree, with files and emtpy directories being
-leaves.  For example, I could describe a directory in English like this:
+leaves.  For example, I could describe a directory visually like this:
+
+```
+/directory_1/
+    directory_1/
+        directory_1/
+    directory_2/
+        file_1
+        directory_3/
+    file_1
+```
+
+With this being its "English" representation
 
 ```
 * A directory named directory_1, containing:
@@ -87,17 +99,6 @@ leaves.  For example, I could describe a directory in English like this:
     * A file named file_1
 ```
 
-Or I may simply write the tree format like this:
-
-```
-/directory_1/
-    directory_1/
-        directory_1/
-    directory_2/
-        file_1
-        directory_3/
-    file_1
-```
 
 Note that the names do not have to be unique if two things are in different
 directories.  This is because when we specify a folder or file, we can specify
